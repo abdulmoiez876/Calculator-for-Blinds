@@ -1,0 +1,13 @@
+table {
+    text-align: center;
+}
+
+button {
+    width :100%
+}
+
+div {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
