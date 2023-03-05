@@ -99,14 +99,10 @@ function handleMicClick() {
 
   recognition.onresult = (event) => {
     let result = event.results[0][0].transcript; // Get the transcript of the first alternative of the final result
-    // try {
     result = eval(result.replace(/\s/g, "").substring(0, result.length - 1));
     console.log(result); // Log the result to the console
     synth.speak(new SpeechSynthesisUtterance(result));
     document.getElementsByTagName("input")[0].value = result;
-    // } catch (err) {
-    //   synth.speak(new SpeechSynthesisUtterance("Please Try Again!"));
-    // }
   };
 
   recognition.start();
