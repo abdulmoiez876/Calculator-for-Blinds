@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
 table {
     text-align: center;
 }
@@ -10,4 +17,12 @@ div {
     width: 100%;
     justify-content: center;
     display: flex;
+}
+
+.speak {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    width: 12%;
 }
